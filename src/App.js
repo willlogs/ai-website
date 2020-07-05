@@ -5,8 +5,7 @@ import theme from "./theme";
 import GlobalStyles from "./GlobalStyles";
 import * as serviceWorker from "./serviceWorker";
 import Pace from "./shared/components/Pace";
-
-const LoggedInComponent = lazy(() => import("./logged_in/components/Main"));
+import './App.css';
 
 const LoggedOutComponent = lazy(() => import("./logged_out/components/Main"));
 
@@ -20,7 +19,7 @@ function App() {
         <Suspense fallback={<Fragment />}>
           <Switch>
             <Route path="/c">
-              <LoggedInComponent />
+              <p>این بخش پیاده سازی نشده است</p>
             </Route>
             <Route>
               <LoggedOutComponent />

@@ -18,81 +18,81 @@ const iconSize = 30;
 const features = [
   {
     color: "#00C853",
-    headline: "Feature 1",
+    headline: "خدمت 1",
     text:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.",
+      "ما این خدمت را به شما ارائه می دهیم و شما می توانید از آن استفاده نمایید ولی باید حتما پولشو هم پرداخت نمایید.",
     icon: <BuildIcon style={{ fontSize: iconSize }} />,
     mdDelay: "0",
     smDelay: "0"
   },
   {
     color: "#6200EA",
-    headline: "Feature 2",
+    headline: "خدمت 2",
     text:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.",
+    "ما این خدمت را به شما ارائه می دهیم و شما می توانید از آن استفاده نمایید ولی باید حتما پولشو هم پرداخت نمایید.",
     icon: <CalendarTodayIcon style={{ fontSize: iconSize }} />,
     mdDelay: "200",
     smDelay: "200"
   },
   {
     color: "#0091EA",
-    headline: "Feature 3",
+    headline: "خدمت 3",
     text:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.",
+    "ما این خدمت را به شما ارائه می دهیم و شما می توانید از آن استفاده نمایید ولی باید حتما پولشو هم پرداخت نمایید.",
     icon: <MeassageIcon style={{ fontSize: iconSize }} />,
     mdDelay: "400",
     smDelay: "0"
   },
   {
     color: "#d50000",
-    headline: "Feature 4",
+    headline: "خدمت 4",
     text:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.",
+    "ما این خدمت را به شما ارائه می دهیم و شما می توانید از آن استفاده نمایید ولی باید حتما پولشو هم پرداخت نمایید.",
     icon: <ComputerIcon style={{ fontSize: iconSize }} />,
     mdDelay: "0",
     smDelay: "200"
   },
   {
     color: "#DD2C00",
-    headline: "Feature 5",
+    headline: "خدمت 5",
     text:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.",
+    "ما این خدمت را به شما ارائه می دهیم و شما می توانید از آن استفاده نمایید ولی باید حتما پولشو هم پرداخت نمایید.",
     icon: <BarChartIcon style={{ fontSize: iconSize }} />,
     mdDelay: "200",
     smDelay: "0"
   },
   {
     color: "#64DD17",
-    headline: "Feature 6",
+    headline: "خدمت 6",
     text:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.",
+    "ما این خدمت را به شما ارائه می دهیم و شما می توانید از آن استفاده نمایید ولی باید حتما پولشو هم پرداخت نمایید.",
     icon: <HeadsetMicIcon style={{ fontSize: iconSize }} />,
     mdDelay: "400",
     smDelay: "200"
   },
   {
     color: "#304FFE",
-    headline: "Feature 7",
+    headline: "خدمت 7",
     text:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.",
+    "ما این خدمت را به شما ارائه می دهیم و شما می توانید از آن استفاده نمایید ولی باید حتما پولشو هم پرداخت نمایید.",
     icon: <CloudIcon style={{ fontSize: iconSize }} />,
     mdDelay: "0",
     smDelay: "0"
   },
   {
     color: "#C51162",
-    headline: "Feature 8",
+    headline: "خدمت 8",
     text:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.",
+    "ما این خدمت را به شما ارائه می دهیم و شما می توانید از آن استفاده نمایید ولی باید حتما پولشو هم پرداخت نمایید.",
     icon: <CodeIcon style={{ fontSize: iconSize }} />,
     mdDelay: "200",
     smDelay: "200"
   },
   {
     color: "#00B8D4",
-    headline: "Feature 9",
+    headline: "خدمت 9",
     text:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.",
+    "ما این خدمت را به شما ارائه می دهیم و شما می توانید از آن استفاده نمایید ولی باید حتما پولشو هم پرداخت نمایید.",
     icon: <CancelIcon style={{ fontSize: iconSize }} />,
     mdDelay: "400",
     smDelay: "0"
@@ -105,9 +105,9 @@ function FeatureSection(props) {
     <div style={{ backgroundColor: "#FFFFFF" }}>
       <div className="container-fluid lg-p-top">
         <Typography variant="h3" align="center" className="lg-mg-bottom">
-          Features
+          خدمات
         </Typography>
-        <div className="container-fluid">
+        <div className="container-fluid" style={{direction:'rtl'}}>
           <Grid container spacing={calculateSpacing(width)}>
             {features.map(element => (
               <Grid
@@ -115,6 +115,7 @@ function FeatureSection(props) {
                 xs={6}
                 md={4}
                 data-aos="zoom-in-up"
+                style={{direction: 'rtl'}}
                 data-aos-delay={
                   isWidthUp("md", width) ? element.mdDelay : element.smDelay
                 }

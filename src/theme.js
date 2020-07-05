@@ -1,4 +1,5 @@
 import { createMuiTheme, responsiveFontSizes } from "@material-ui/core";
+import Gandom from "micro-persian-fonts/dist/fonts/GandomFonts/Gandom.woff";
 
 // colors
 const primary = "#b3294e";
@@ -25,6 +26,7 @@ const xs = 0;
 const spacing = 8;
 
 const theme = createMuiTheme({
+  direction: 'rtl',
   palette: {
     primary: { main: primary },
     secondary: { main: secondary },
@@ -120,7 +122,17 @@ const theme = createMuiTheme({
     }
   },
   typography: {
-    useNextVariants: true
+    direction: 'rtl',
+    useNextVariants: true,
+    fontFamily:[
+      "Gandom"
+    ].join(','),
+  },
+  div: {
+    direction: 'rtl',
+  },
+  grid: { 
+    direction: 'rtl',
   }
 });
 

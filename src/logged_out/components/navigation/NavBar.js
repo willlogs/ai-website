@@ -7,6 +7,7 @@ import {
   Typography,
   Button,
   Hidden,
+  Grid,
   IconButton,
   withStyles
 } from "@material-ui/core";
@@ -24,15 +25,11 @@ const styles = theme => ({
   },
   toolbar: {
     display: "flex",
-    justifyContent: "space-between"
+    direction: "rtl"
   },
   menuButtonText: {
     fontSize: theme.typography.body1.fontSize,
     fontWeight: theme.typography.h6.fontWeight
-  },
-  brandText: {
-    fontFamily: "'Baloo Bhaijaan', cursive",
-    fontWeight: 400
   },
   noDecoration: {
     textDecoration: "none !important"
@@ -52,21 +49,21 @@ function NavBar(props) {
   const menuItems = [
     {
       link: "/",
-      name: "Home",
+      name: "خانه",
       icon: <HomeIcon className="text-white" />
     },
     {
       link: "/blog",
-      name: "Blog",
+      name: "وبلاگ",
       icon: <BookIcon className="text-white" />
     },
     {
-      name: "Register",
+      name: "ثبت نام",
       onClick: openRegisterDialog,
       icon: <HowToRegIcon className="text-white" />
     },
     {
-      name: "Login",
+      name: "ورود",
       onClick: openLoginDialog,
       icon: <LockOpenIcon className="text-white" />
     }
@@ -82,7 +79,7 @@ function NavBar(props) {
               display="inline"
               color="primary"
             >
-              Wa
+              عه
             </Typography>
             <Typography
               variant="h4"
@@ -90,7 +87,7 @@ function NavBar(props) {
               display="inline"
               color="secondary"
             >
-              Ver
+              د
             </Typography>
           </div>
           <div>
