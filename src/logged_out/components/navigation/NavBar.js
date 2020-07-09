@@ -57,16 +57,16 @@ function NavBar(props) {
       name: "وبلاگ",
       icon: <BookIcon className="text-white" />
     },
-    {
-      name: "ثبت نام",
-      onClick: openRegisterDialog,
-      icon: <HowToRegIcon className="text-white" />
-    },
-    {
-      name: "ورود",
-      onClick: openLoginDialog,
-      icon: <LockOpenIcon className="text-white" />
-    }
+    // {
+    //   name: "ثبت نام",
+    //   onClick: openRegisterDialog,
+    //   icon: <HowToRegIcon className="text-white" />
+    // },
+    // {
+    //   name: "ورود",
+    //   onClick: openLoginDialog,
+    //   icon: <LockOpenIcon className="text-white" />
+    // }
   ];
   return (
     <div className={classes.root}>

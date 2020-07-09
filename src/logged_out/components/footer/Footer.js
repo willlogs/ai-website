@@ -20,6 +20,7 @@ import ColoredButton from "../../../shared/components/ColoredButton";
 const styles = theme => ({
   footerInner: {
     backgroundColor: theme.palette.common.darkBlack,
+    direction:'rtl',
     paddingTop: theme.spacing(8),
     paddingLeft: theme.spacing(2),
     paddingRight: theme.spacing(2),
@@ -78,7 +79,7 @@ const styles = theme => ({
 const infos = [
   {
     icon: <PhoneIcon />,
-    description: "+1 555 123456"
+    description: "+98 513 777 77"
   },
   {
     icon: <MailIcon />,
@@ -101,7 +102,7 @@ const socialIcons = [
       </svg>
     ),
     label: "Github",
-    href: "https://github.com/dunky11/react-saas-template"
+    href: "https://github.com/"
   },
   {
     icon: (
@@ -171,7 +172,7 @@ function Footer(props) {
                   <TextField
                     variant="outlined"
                     multiline
-                    placeholder="Get in touch with us"
+                    placeholder="ارتباط با ما"
                     inputProps={{ "aria-label": "Get in Touch" }}
                     InputProps={{
                       className: classes.whiteBg
@@ -185,8 +186,9 @@ function Footer(props) {
                   color={theme.palette.common.white}
                   variant="outlined"
                   type="submit"
+                  fontFamily="Gandom"
                 >
-                  Send Message
+                  ارسال پیام
                 </ColoredButton>
               </Box>
             </form>
@@ -211,7 +213,7 @@ function Footer(props) {
                         flexDirection="column"
                         justifyContent="center"
                       >
-                        <Typography variant="h6" className="text-white">
+                        <Typography variant="h6" className="text-white" style={{direction:"ltr"}}>
                           {info.description}
                         </Typography>
                       </Box>
@@ -223,11 +225,11 @@ function Footer(props) {
           </Hidden>
           <Grid item xs={12} md={6} lg={4}>
             <Typography variant="h6" paragraph className="text-white">
-              About the Company
+              درباره عهد
             </Typography>
             <Typography style={{ color: "#8f9296" }} paragraph>
-              Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce
-              euismod convallis velit, eu auctor lacus vehicula sit amet.
+              عهد در سال فلان با هدف فلان توسط دانشجویان دانشگاه علم و صنعت پایه گذاری شد و از آن زمان تا به حال دچار
+              تغییرات زیادی شده است. هدف ما خوشبختی بشریت است و ازین چیزا.
             </Typography>
             <Box display="flex">
               {socialIcons.map((socialIcon, index) => (
