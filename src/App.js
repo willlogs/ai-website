@@ -3,7 +3,6 @@ import { MuiThemeProvider, CssBaseline } from "@material-ui/core";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import theme from "./theme";
 import GlobalStyles from "./GlobalStyles";
-import * as serviceWorker from "./serviceWorker";
 import Pace from "./shared/components/Pace";
 import './App.css';
 
@@ -30,7 +29,5 @@ function App() {
     </BrowserRouter>
   );
 }
-
-serviceWorker.register();
 
 export default App;

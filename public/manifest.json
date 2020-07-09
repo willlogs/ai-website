@@ -1,9 +1,9 @@
 {
-  "short_name": "WaVer",
-  "name": "WaVer react template",
+  "short_name": "Ahd",
+  "name": "Ahd Website",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "hnet.com-image.ico",
       "sizes": "64x64 32x32 16x16",
       "type": "image/x-icon"
     },
