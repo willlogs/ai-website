@@ -12,7 +12,7 @@ import {
   withWidth,
   isWidthUp
 } from "@material-ui/core";
-import headerImage from "../../dummy_data/images/headerImage.jpg";
+import headerImage from "../../../img/home.png";
 import WaveBorder from "../../../shared/components/WaveBorder";
 
 const styles = theme => ({
@@ -108,9 +108,12 @@ function HeadSection(props) {
           <Typography variant="h2" style={{color: 'white'}}>
             شرکت عامل های هوشمند دانا
           </Typography>
-          <Typography variant="h5" style={{color: 'white', opacity: '0.5'}}>
-            پژوهش های هوش مصنوعی آزمایشگاه داده کاوی دانشگاه علم و صنعت <br/>و قطب علمی رایانش نرم و پردازش هوشمند اطلاعات
+          <Typography variant="h5" style={{color: 'white', opacity: '0.5', marginBottom: "50px", marginTop: "20px"}}>
+            پژوهش های هوش مصنوعی آزمایشگاه داده کاوی دانشگاه علم و صنعت <br/>این صفحه کاملا قابل تغییر و ویرایش است و میتوان بخش هایی به آن افزود
           </Typography>
+          <Grid justify="center" alignItems="center" xs={12}>
+            <img src={headerImage} style={{display: "block", marginLeft: "auto", marginRight: "auto", width: "100%", maxWidth: "750px", height: "auto"}}/>
+          </Grid>
         </div>
       </div>
       <WaveBorder
