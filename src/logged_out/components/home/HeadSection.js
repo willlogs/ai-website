@@ -105,10 +105,10 @@ function HeadSection(props) {
     <Fragment>
       <div className={classNames("lg-p-top", classes.wrapper)}>
         <div className={classNames("container-fluid", classes.container)}>
-          <Typography variant="h2" style={{color: 'white'}}>
+          <Typography variant="h2">
             شرکت عامل های هوشمند دانا
           </Typography>
-          <Typography variant="h5" style={{color: 'white', opacity: '0.5', marginBottom: "50px", marginTop: "20px"}}>
+          <Typography variant="h5" style={{opacity: '0.5', marginBottom: "50px", marginTop: "20px"}}>
             پژوهش های هوش مصنوعی آزمایشگاه داده کاوی دانشگاه علم و صنعت <br/>این صفحه کاملا قابل تغییر و ویرایش است و میتوان بخش هایی به آن افزود
           </Typography>
           <Grid justify="center" alignItems="center" xs={12}>

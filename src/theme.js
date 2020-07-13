@@ -2,8 +2,8 @@ import { createMuiTheme, responsiveFontSizes } from "@material-ui/core";
 import Gandom from "micro-persian-fonts/dist/fonts/GandomFonts/Gandom.woff";
 
 // colors
-const primary = "#b3294e";
-const secondary = "#4829B2";
+const primary = "#494d66";
+const secondary = "#e29c00";
 const black = "#343a40";
 const darkBlack = "rgb(36, 40, 44)";
 const background = "#f5f5f5";

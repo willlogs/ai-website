@@ -57,16 +57,10 @@ function NavBar(props) {
       name: "وبلاگ",
       icon: <BookIcon className="text-white" />
     },
-    // {
-    //   name: "ثبت نام",
-    //   onClick: openRegisterDialog,
-    //   icon: <HowToRegIcon className="text-white" />
-    // },
-    // {
-    //   name: "ورود",
-    //   onClick: openLoginDialog,
-    //   icon: <LockOpenIcon className="text-white" />
-    // }
+    {
+      link: "/404",
+      name: "لینک اضافی"
+    }
   ];
   return (
     <div className={classes.root}>
@@ -79,7 +73,7 @@ function NavBar(props) {
               display="inline"
               color="primary"
             >
-              عه
+              لوگو
             </Typography>
             <Typography
               variant="h4"
@@ -87,7 +81,7 @@ function NavBar(props) {
               display="inline"
               color="secondary"
             >
-              د
+              عهد
             </Typography>
           </div>
           <div>
@@ -96,6 +90,7 @@ function NavBar(props) {
                 className={classes.menuButton}
                 onClick={handleMobileDrawerOpen}
                 aria-label="Open Navigation"
+                color="primary"
               >
                 <MenuIcon color="primary" />
               </IconButton>
@@ -111,7 +106,7 @@ function NavBar(props) {
                       onClick={handleMobileDrawerClose}
                     >
                       <Button
-                        color="secondary"
+                        color="primary"
                         size="large"
                         classes={{ text: classes.menuButtonText }}
                       >
@@ -122,7 +117,7 @@ function NavBar(props) {
                 }
                 return (
                   <Button
-                    color="secondary"
+                    color="primary"
                     size="large"
                     onClick={element.onClick}
                     classes={{ text: classes.menuButtonText }}
