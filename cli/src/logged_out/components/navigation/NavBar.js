@@ -22,6 +22,7 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import NavigationDrawer from "../../../shared/components/NavigationDrawer";
 import Axios from "axios";
 import {withCookies} from 'react-cookie';
+import headerImage from "../../../img/logo.png";
 
 const styles = theme => ({
   appBar: {
@@ -86,11 +87,6 @@ function NavBar(props) {
 
   const menuItems = [
     {
-      link: "/",
-      name: "خانه",
-      icon: <HomeIcon className="text-white" />
-    },
-    {
       link: "/blog",
       name: "وبلاگ",
       icon: <BookIcon className="text-white" />
@@ -102,12 +98,6 @@ function NavBar(props) {
   ];
 
   const allItems = [
-    {
-      link: "/",
-      name: "خانه",
-      icon: <HomeIcon className="text-white" />,
-      noAuth: true
-    },
     {
       link: "/blog",
       name: "وبلاگ",
@@ -137,23 +127,10 @@ function NavBar(props) {
         <Toolbar className={classes.toolbar}>
           <Grid item xs={10}>
             <Grid container>
-              <div>
-                <Typography
-                  variant="h4"
-                  className={classes.brandText}
-                  display="inline"
-                  color="primary"
-                >
-                  لوگو
-                </Typography>
-                <Typography
-                  variant="h4"
-                  className={classes.brandText}
-                  display="inline"
-                  color="secondary"
-                >
-                  عهد
-                </Typography>
+              <div style={{marginLeft: "20px"}}>
+                <Link to="/" style={{direction:"ltr"}}> 
+                  <img src={headerImage} style={{width: "40px", margin: "auto"}}/>
+                </Link>
               </div>
               <div>
                 <Hidden mdUp>

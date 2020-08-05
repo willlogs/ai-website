@@ -32,7 +32,7 @@ function Main(props) {
   const selectHome = useCallback(() => {
     smoothScrollTop();
     document.title =
-      "عهد - شرکت عامل های هوشمند دانا";
+      "TemWear";
     setSelectedTab("Home");
   }, [setSelectedTab]);
 

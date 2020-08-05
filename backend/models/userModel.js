@@ -13,7 +13,7 @@ const userSchema = new Schema({
         required: true,
     },
     cart: {
-        items: [{id: {type: String, ref: 'Item', require: true}}]
+        items: [{id: {type: String, ref: 'Item', require: true}, count: {type: Number, require: true}}]
     },
     address: {
         type: String,

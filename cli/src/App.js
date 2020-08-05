@@ -6,6 +6,9 @@ import GlobalStyles from "./GlobalStyles";
 import Pace from "./shared/components/Pace";
 import './App.css';
 
+import ShopPage from './logged_out/components/pages/ShopPage';
+import ItemPage from './logged_out/components/pages/ItemPage';
+
 const LoggedOutComponent = lazy(() => import("./logged_out/components/Main"));
 const LoggedInComponent = lazy(() => import("./logged_in/components/Main"));
 
@@ -18,6 +21,8 @@ function App() {
         <Pace color={theme.palette.primary.light} />
         <Suspense fallback={<Fragment />}>
           <Switch>
+            <Route path="/shop" component={ShopPage}/>
+            <Route path="/item" component={ItemPage}/>
             <Route path="/c">
               <LoggedInComponent />
             </Route>

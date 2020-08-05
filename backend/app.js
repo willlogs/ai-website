@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 const pass = encodeURIComponent('#p4s5#();');
-const localDB = 'mongodb://127.0.0.1:27017/test'
+const localDB = 'mongodb://127.0.0.1:27017/tem-db'
 const siteDB = `mongodb://mamatosen:${pass}@185.81.96.80/admin`;
 
 const curDBURI = localDB;

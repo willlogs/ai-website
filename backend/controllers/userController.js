@@ -3,6 +3,10 @@ const bcrypt = require('bcrypt');
 
 module.exports.register = (req, res, next) => {
     let data = req.body;
+    if(data.username && data.username.includes('ADMIN_')){
+        res.json({lashi: "true"});
+    }
+    else{
         bcrypt.hash(data.password, 12)
         .then(result => {  
             data.password = result;
@@ -33,6 +37,7 @@ module.exports.register = (req, res, next) => {
         .catch(err => {
             console.log('error with hashing');
         });
+    }
 };
 
 module.exports.getItemsOf = (req, res, next) => {
@@ -100,7 +105,6 @@ module.exports.login = (req, res, next) => {
 }
 
 module.exports.isAuth = (req, res, next) => {
-    console.log(req.session.isAuth);
     let isAuth = req.session.isAuth === true;
     let isAdmin = req.session.isAdmin === true;
     res.json({isAuth, isAdmin});

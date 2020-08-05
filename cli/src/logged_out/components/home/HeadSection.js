@@ -12,8 +12,7 @@ import {
   withWidth,
   isWidthUp
 } from "@material-ui/core";
-import headerImage from "../../../img/home.png";
-import WaveBorder from "../../../shared/components/WaveBorder";
+import sm from "../../../img/sm.png";
 
 const styles = theme => ({
   extraLargeButtonLabel: {
@@ -104,24 +103,16 @@ function HeadSection(props) {
   return (
     <Fragment>
       <div className={classNames("lg-p-top", classes.wrapper)}>
-        <div className={classNames("container-fluid", classes.container)}>
+        <Grid container direction="column" alignContent="center" justify="center" style={{margin: "20px"}}>
           <Typography variant="h2">
-            شرکت عامل های هوشمند دانا
+            تم
           </Typography>
           <Typography variant="h5" style={{opacity: '0.5', marginBottom: "50px", marginTop: "20px"}}>
-            پژوهش های هوش مصنوعی آزمایشگاه داده کاوی دانشگاه علم و صنعت <br/>این صفحه کاملا قابل تغییر و ویرایش است و میتوان بخش هایی به آن افزود
+            سامانه کسب درآمد از شبکه های مجازی بدون نیاز به پشتوانه مالی اولیه
           </Typography>
-          <Grid justify="center" alignItems="center" xs={12}>
-            <img src={headerImage} style={{display: "block", marginLeft: "auto", marginRight: "auto", width: "100%", maxWidth: "750px", height: "auto"}}/>
-          </Grid>
-        </div>
+          <img src={sm} style={{maxWidth: "80%", width: "700px", minWidth: "300px"}}/>
+        </Grid>
       </div>
-      <WaveBorder
-        upperColor={theme.palette.secondary.main}
-        lowerColor="#FFFFFF"
-        className={classes.waveBorder}
-        animationNegativeDelay={2}
-      />
     </Fragment>
   );
 }

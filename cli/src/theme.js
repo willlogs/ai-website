@@ -2,8 +2,8 @@ import { createMuiTheme, responsiveFontSizes } from "@material-ui/core";
 import Gandom from "micro-persian-fonts/dist/fonts/GandomFonts/Gandom.woff";
 
 // colors
-const primary = "#494d66";
-const secondary = "#e29c00";
+const primary = "#1c425c";
+const secondary = "#1af9a8";
 const black = "#343a40";
 const darkBlack = "rgb(36, 40, 44)";
 const background = "#f5f5f5";
@@ -125,7 +125,8 @@ const theme = createMuiTheme({
     direction: 'rtl',
     useNextVariants: true,
     fontFamily:[
-      "Gandom"
+      "Gandom",
+      "Teko"
     ].join(','),
   },
   div: {
